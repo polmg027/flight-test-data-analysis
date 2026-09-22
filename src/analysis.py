@@ -28,4 +28,28 @@ def check_limits(signal, minimum, maximum):
         return True
     else:
         return False
+
+
+def time_lag(signal_1, signal_2, dt):
+    signal_1 = np.asarray(signal_1)
+    signal_2 = np.asarray(signal_2)
+
+    signal_1 = (signal_1 - signal_1.mean()) / signal_1.std()
+    signal_2 = (signal_2 - signal_2.mean()) / signal_2.std()
+
+    correlation = np.correlate(signal_1, signal_2, mode="full")
+    lags = np.arange(-len(signal_1) + 1, len(signal_1))
+
+    best_lag = lags[np.argmax(correlation)]
+
+    return best_lag * dt
+
+
+def limit_violations(data, column, minimum, maximum):
+    violations = data[
+        (data[column] < minimum) |
+        (data[column] > maximum)
+    ].copy()
+
+    return violations
     

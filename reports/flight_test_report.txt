@@ -1,0 +1,17 @@
+FLIGHT TEST DATA ANALYSIS REPORT
+========================================
+
+TEST POINT
+Time window: 90-125 s
+Mean altitude: 8488.9 ft
+Mean IAS: 114.80 kt
+IAS within limits: False
+
+DYNAMIC ANALYSIS
+Oscillation window: 100-117 s
+Dominant frequency: 0.877 Hz
+Roll peak-to-peak: 3.02 deg
+Yaw-rate peak-to-peak: 0.82 deg/s
+Rudder peak-to-peak: 1.18 deg
+Yaw-roll time lag: 0.10 s
+Yaw-roll phase lag: 31.6 deg
