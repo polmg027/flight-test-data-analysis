@@ -1,0 +1,13 @@
+
+Test point analysed from 120 to 150 s.
+
+Mean IAS: 119.40 kt
+Mean altitude: 10070.46 ft
+
+A sustained longitudinal oscillation was detected between 128 and 143 s.
+Dominant frequency: 1.72 Hz
+
+The oscillation is present in pitch, pitch rate, elevator and Nz.
+No equivalent periodic behaviour was observed in roll or engine RPM.
+
+Further investigation is recommended.
